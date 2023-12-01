@@ -7,7 +7,7 @@
 }
 
 html{
-    font-family: "PT Sans";
+    font-family: "PT Sans",sans-serif;
 }
 
 header{
@@ -18,119 +18,195 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2em;
+    padding-block: 1em;
+}
+
+.hamburger{
+    display: none;
+}
+
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    gap: 2em;
+    font-size: 1.2rem;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li:last-child a{
+    background-color: white;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 15px;
 }
 
 .container{
-    width: 100%;
-    margin: 0 auto;
-}
-
-.hamburger i{
-    font-size: 2rem;
-}
-
-main{
-    padding: 3rem;
-}
-
-.blue_cards_box h3{
-    color: #0084fd;
-    font-size: 1.5rem;
-}
-
-.blue_cards_box figure{
-    width: 100%;
-}
-
-.blue_cards_box figure img{
-    display: block;
-    width: 100%;
-}
-.blue_cards_box{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.blue_cards{
-    text-align: center;
-    background-color: #b5ddff;
-    padding: 2.5em;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    border-radius: 5%;
-    font-weight: bold;
-    color:#5a6e7f;
-    line-height: 160%;
-}
-
-.blue_cards.phone{
-    text-align: left;
-    padding-inline:2em;
-    padding-bottom: 0;
-}
-
-.blue_cards button{
-    padding-block: 10px;
     width: 70%;
     margin: 0 auto;
-    background-color:#0084fd;
-    border: none;
-    border-radius: 15px;
-    color: white;
-    font-weight: bold;
+}
+.blue_cards_box {
+    padding-top: 2rem;
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.fa-solid{
-    font-size: 5rem;
+.blue_cards:nth-child(1){
+    padding: 2em 2em 0;
+    text-align: left;
+    flex-basis: calc((100% / 3) * 2 - 10px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.blue_cards:nth-child(1) button{
+    margin-top: 2em;
+    background-color: #0084fd;
+    width: 50%;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 1.2rem;
 }
 
 .fa-apple{
     margin-right: 5px;
 }
 
-
-@media screen and (min-width: 1024px){
-.container{
-    width: 80%;
-    margin: 0 auto;
+.blue_cards:nth-child(1) figure{
+    flex-basis: 50%;
+    align-self: flex-end;
+    flex-shrink: 0;
 }
 
-    .blue_cards_box{
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+.blue_cards:nth-child(1) figure img {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+}
 
-    .blue_cards{
-        padding: 1em;
-        border-radius: 20px;
-    }
 
-    .blue_cards:not(.phone){
-        flex-basis: calc(100% / 3 - 20px);
-    }
+.blue_cards{
+    padding:1rem;
+    text-align: center;
+    background-color: #b5ddff;
+    flex-basis: calc((100% / 3) - 20px);
+    font-weight: bold;
+    border-radius:20px;
+    line-height: 200%;
+    color: #5a6e7f;
+}
 
-    .blue_cards.phone{
-        flex-basis: calc((100% / 3) * 2 - 10px);
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
+.blue_cards h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0084fd;
+    padding-block: 1em;
+}
 
-    .phone_text{
-        align-self: flex-start;
-        flex-basis: 60%;
+.blue_cards p {
+    padding-block: 1em;
+    font-size: 1.2rem;
+}
+
+
+.fa-solid{
+    font-size: 5rem;
+}
+
+@media screen and (min-width:426px) and (max-width:768px){
+
+    .menu{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .fa-bars{
+        font-size: 3rem;
+    }
+    .container{
+        width: 95%;
+        font-size: 1rem;
+        line-height: 100%;
+    }
+    .blue_cards:nth-child(1){
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
         padding-inline: 1em;
     }
 
-    .phone_text p{
-        margin-block: 2em;
+    .blue_cards:nth-child(1) figure{
+        align-self: flex-start;
+        width: 70%;
+        flex-basis: 0;
+    }
+    .blue_cards:nth-child(1) figure img{
+        display: block;
+        margin: 0;
+    }
+    .blue_cards{
+        padding: 1em;
     }
 
-    .blue_cards.phone figure{
-        flex-basis: 40%;
-        align-self: flex-end;
+    .blue_cards:nth-child(1) button{
+        margin-block:1em ;
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+    .blue_cards:nth-child(1) p{
+        padding:0 ;
+    }
+    .blue_cards{
+        line-height: 150%;
+    }
+   
+    .blue_cards h3{
+        padding-top:1em ;
+         padding-bottom: 0;
     }
 }
+
+@media screen and (max-width:425px) {
+    .menu{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .fa-bars{
+        font-size: 2rem;
+    }
+    .container{
+        width: 90%;
+    }
+    .blue_cards:nth-child(1){
+        flex-basis: 100%;
+        flex-direction: column;
+    }
+    .blue_cards:nth-child(1) button{
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .blue_cards{
+        flex-basis: 100%;
+    }    
+    .phone_text h3{
+        padding: 0;
+    }
+    .blue_cards:nth-child(1) figure{
+        margin-top: 1em;
+        flex-basis: 0;
+    }
+}
+
+
