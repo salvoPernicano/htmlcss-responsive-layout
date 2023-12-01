@@ -93,6 +93,11 @@ main{
 
 
 @media screen and (min-width: 1024px){
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
     .blue_cards_box{
         flex-direction: row;
         flex-wrap: wrap;
@@ -100,6 +105,7 @@ main{
 
     .blue_cards{
         padding: 1em;
+        border-radius: 20px;
     }
 
     .blue_cards:not(.phone){
