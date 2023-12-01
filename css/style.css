@@ -121,6 +121,55 @@ nav{
     font-size: 5rem;
 }
 
+.purple_box{
+    background-color: #9593e6;
+    margin-top: 5rem;
+}
+
+.planning{
+    display: flex;
+    padding: 3rem;
+    gap: 30px;
+    justify-content: center;
+    line-height: 150%;
+}
+.col-left{
+    flex-basis:35% ;
+    color: white;
+
+}
+.col-left h3{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.col-left figure{
+    margin-bottom: 3rem;
+}
+.col-right{
+    height: 70%;
+    text-align: center;
+    padding:1rem 2rem;
+    color: black;
+    background-color: white;
+    border-radius: 25px;
+    flex-basis: 30%;
+    align-self: flex-end;
+}
+.col-left figure img,
+.col-right figure img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.fa-arrow-down{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    background-color: #9593e6;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
 @media screen and (min-width:481px) and (max-width:1060px){
 
     .menu{
@@ -173,6 +222,10 @@ nav{
         padding-top:1em ;
          padding-bottom: 0;
     }
+
+    .planning{
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width:480px) {
@@ -207,6 +260,11 @@ nav{
         margin-top: 1em;
         flex-basis: 0;
     }
+
+    .planning{
+        flex-direction: column;
+    }
 }
+
 
 
