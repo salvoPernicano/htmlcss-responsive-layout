@@ -6,8 +6,8 @@
     box-sizing:border-box;
 }
 
-body{
-    background-color: grey;
+html{
+    font-family: "PT Sans";
 }
 
 header{
@@ -21,6 +21,72 @@ nav{
     padding: 2em;
 }
 
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
 .hamburger i{
+    font-size: 2rem;
+}
+
+main{
+    padding: 3rem;
+}
+
+.blue_cards_box h3{
+    color: #0084fd;
     font-size: 1.5rem;
+}
+
+.blue_cards_box figure{
+    width: 100%;
+}
+
+.blue_cards_box figure img{
+    display: block;
+    width: 100%;
+}
+.blue_cards_box{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.blue_cards{
+    text-align: center;
+    background-color: #b5ddff;
+    padding: 2.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5%;
+    font-weight: bold;
+    color:#5a6e7f;
+    line-height: 160%;
+}
+
+.blue_cards.phone{
+    text-align: left;
+    padding-inline:2em;
+    padding-bottom: 0;
+}
+
+.blue_cards button{
+    padding-block: 10px;
+    width: 70%;
+    margin: 0 auto;
+    background-color:#0084fd;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.fa-solid{
+    font-size: 5rem;
+}
+
+.fa-apple{
+    margin-right: 5px;
 }
