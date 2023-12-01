@@ -65,7 +65,7 @@ nav{
 }
 
 .blue_cards:nth-child(1) button{
-    margin-top: 2em;
+    margin-block: 2em;
     background-color: #0084fd;
     width: 50%;
     border: none;
@@ -121,7 +121,7 @@ nav{
     font-size: 5rem;
 }
 
-@media screen and (min-width:426px) and (max-width:768px){
+@media screen and (min-width:481px) and (max-width:1060px){
 
     .menu{
         display: none;
@@ -175,7 +175,7 @@ nav{
     }
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:480px) {
     .menu{
         display: none;
     }
