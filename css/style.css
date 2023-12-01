@@ -90,3 +90,41 @@ main{
 .fa-apple{
     margin-right: 5px;
 }
+
+
+@media screen and (min-width: 1024px){
+    .blue_cards_box{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .blue_cards{
+        padding: 1em;
+    }
+
+    .blue_cards:not(.phone){
+        flex-basis: calc(100% / 3 - 20px);
+    }
+
+    .blue_cards.phone{
+        flex-basis: calc((100% / 3) * 2 - 10px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .phone_text{
+        align-self: flex-start;
+        flex-basis: 60%;
+        padding-inline: 1em;
+    }
+
+    .phone_text p{
+        margin-block: 2em;
+    }
+
+    .blue_cards.phone figure{
+        flex-basis: 40%;
+        align-self: flex-end;
+    }
+}
