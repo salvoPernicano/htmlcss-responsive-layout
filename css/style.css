@@ -238,6 +238,50 @@ nav{
     content: "\f10e";
     font-family: "FontAwesome";
 }
+.benefits{
+    color:#9593e6
+}
+#benefits_title{
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+    padding-block: 3rem;
+    line-height: 100%;
+}
+.benefits_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+.benefits_item{
+    flex-basis: calc(100% / 3 - 40px);
+    background-color: white;
+    padding: 3em;
+    border-radius: 30px;
+}
+.benefits_item h2{
+    font-size: 4rem;
+}
+.benefits_item h3{
+    font-size: 1.5rem;
+    margin-block: 1em;
+}
+.benefits_item p{
+    color:grey;
+    line-height: 150%;    
+}
+.purple_btn{
+    background-color: #9593e6;
+    color: white;
+    border: none;
+    padding: 15px 50px;
+    border-radius: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 2em;
+    font-size: 1rem;
+}
 @media screen and (min-width:481px) and (max-width:1060px){
 
     .menu{
@@ -297,6 +341,10 @@ nav{
     .phone_text{
         padding: 0rem;
     }
+
+    .benefits_item{
+        flex-basis: calc(50% - 40px);
+    }
 }
 
 @media screen and (max-width:480px) {
@@ -347,6 +395,9 @@ nav{
     text-align: center;
     line-height: 150%;
     padding-bottom: 1em;
+  }
+  .benefits_item{
+    flex-basis: 100%;
   }
 }
 
