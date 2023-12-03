@@ -13,6 +13,14 @@ html {
 
 header {
     background-color: #0084fd;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+main{
+    padding-top: 5em;
 }
 
 nav {
@@ -81,7 +89,7 @@ nav {
     display: none;
     position: fixed;
     left: 100%;
-    top: 2;
+    top: 4.5em;
     width: 100%;
     height: 100vh;
     z-index: 99;
