@@ -8,6 +8,7 @@
 
 html{
     font-family: "PT Sans",sans-serif;
+    scroll-behavior: smooth;
 }
 
 header{
@@ -239,7 +240,8 @@ nav{
     font-family: "FontAwesome";
 }
 .benefits{
-    color:#9593e6
+    color:#9593e6;
+    padding-block:2em ;
 }
 #benefits_title{
     text-align: center;
@@ -282,6 +284,69 @@ nav{
     margin-top: 2em;
     font-size: 1rem;
 }
+.about_box{
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+}
+.about_box h2{
+    color: #9593e6;
+    font-size: 4em;
+    line-height: 100%;
+}
+.about_col_left{
+    line-height: 200%;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+.about_col_left p{
+    margin-top: 3em;
+}
+.about_col_right{
+    display: flex;
+    flex-direction: column;
+    color: #9593e6;
+    padding-inline: 2rem;
+}
+.about_col_right h3{
+    font-size: 2em;
+    margin-bottom: 1em;
+    line-height: 100%;
+}
+.about_col_right figure{
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.about_col_right figure img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.fa-quote-left{
+    position: absolute;
+    right: -15px;
+    top: -15;
+}
+.linkedin_btn{
+    background-color: #9593e6;
+    border: none;
+    color: white;
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px 5px;
+    border-radius: 40px;
+}
+.fa-linkedin{
+    margin-right: 5px;
+    font-size: 1.2rem;
+}
+
+
 @media screen and (min-width:481px) and (max-width:1060px){
 
     .menu{
@@ -398,6 +463,9 @@ nav{
   }
   .benefits_item{
     flex-basis: 100%;
+  }
+  .about_box{
+    flex-direction: column;
   }
 }
 
